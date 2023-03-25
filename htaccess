@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# RewriteRule ^itemt?$ index.php
+# RewriteRule ^itemt/?$ index.html
+# RewriteRule ^index/?$ index.html
+# RewriteRule ^index.php/?$ index.html
+
+# RewriteRule ^home?$ index.php [NC,L]
+
+# RewriteCond %{HTTPS} !=On
+# RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+
+errorDocument 404 /https://tonghengphone.netlify.app/img/index.html
+
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# RewriteRule ^editscore/(.*)$ /date.php?tt=$1 [NC,L]
+
+# RewriteRule ^(.*)$ /dmizone_bkp/index.php?/$1 [L]
